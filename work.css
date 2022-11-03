@@ -1,0 +1,197 @@
+body{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#title{
+    display: grid;
+    grid-template-columns: 75%  25%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+
+}
+
+#imge{
+   margin: 2px;
+   width: 300px;
+    
+}
+#main{
+    margin-top: 5%;
+    grid-column-start: 2 ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#about {
+    color: #00b39b;
+    text-decoration: none;
+
+}
+
+.gris ,#dep, #logos  a{
+    color:#747474;
+    text-decoration: none;
+    
+}
+.gris ,#logos a,#dep :hover{
+    color: #00b39b;
+   
+}
+#dep ,#choosee ,#choose2,#two ,#more{
+    position: relative;
+    cursor:pointer;
+}
+#choose,#dropchoose,#dropchoose2,#droptwo ,#moredrop{
+    display: none ;
+    position: absolute;
+    color: #1b2734;
+    background-color: #fff;
+}
+
+
+#dep:hover #choose{
+    display:block;
+}
+#choosee:hover #dropchoose{
+    display:block;
+}
+#choose2:hover #dropchoose2{
+    display:block;
+}
+#more:hover #moredrop{
+    display:block;
+}
+#two:hover #droptwo{
+    display:block;
+}
+
+.vert{
+    font-size: 2.125rem;
+    color: #00b39b;
+}
+#divide{
+    display: grid;
+    grid-template-columns: auto  auto;
+    line-height: 1.75;
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+}
+#divide p{
+    padding:5%;
+}
+#for{
+    display: grid;
+    grid-template-columns: auto  auto auto;
+}
+#patient{
+    background-color: #00b39b;
+}
+#patient , #doctor , #clinic{
+    margin-right: 20%;
+    font-weight:400px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 23px;
+    color:#fff;
+}
+#doctor{
+    background-color: #3d83df;
+}
+#clinic{
+    background-color: #1b2734;
+}
+#logos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 30%  auto;
+}
+#logos p{
+    margin-top:0px;
+}
+#logos div{
+    margin-left: 30px;
+   font-size: 20px;
+    
+    
+}
+
+.s{
+    margin-left: 40px;
+    width: 30px;
+}
+.logs{
+    margin-left: 40px;
+    width :  80px;
+}
+#fifty{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    background: url(/logo.png) no-repeat;
+    background-color: #9ae8dd;
+   background-position-x: left;
+   background-position-y: bottom;
+    height: 500px;
+}
+
+#one div ,#two div {
+    background-color: #fff;
+    width: 90%;
+    height:40%;
+    margin-bottom: 3px;
+    
+   
+}
+#flag{
+    margin-top: 40px;
+    border: 20px black;
+}
+.patientl{
+    margin-bottom: 1px;
+}
+.visits{
+    margin-top: 20px;
+    
+}
+.visits, .patientl,#patients,#flag{
+    text-align: center;
+    padding-top: 10%;
+}
+#one img+p,#two img+p{
+    font-size: 1.8461538462em;
+    color: #00b39b;
+}
+#fifty{
+    height: 700px;
+}
+#one p+p ,#two p+p{
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    font-weight: 400;
+}
+#pp{
+    text-align: center;
+}
+#hi{
+    color: #747474;
+    text-align: center;
+}
+#pictures{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto auto;  
+    
+}
+#pictures div{
+    display: flex;
+    align-content: space-between;
+}
+#picture div a img{
+    width:30px;
+}
+#kt{
+    display: flex;
+    align-items: space-between;
+}
