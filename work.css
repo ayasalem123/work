@@ -1,17 +1,19 @@
 body{
+    margin-left: 220px;
+    margin-right: 220px;
+}
+#title {
     margin-left: 150px;
     margin-right: 150px;
-}
-#title{
+    width: 1800px;
     display: grid;
-    grid-template-columns: 75%  25%;
-    padding-right: 20px;
-    padding-left: 20px;
+    grid-template-columns: repeat(6, 1fr);
     background-color: white;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     z-index: 1;
-
-}
+  }
 
 #imge{
    margin: 2px;
@@ -20,7 +22,7 @@ body{
 }
 #main{
     margin-top: 5%;
-    grid-column-start: 2 ;
+   grid-column: 3/4;
     display: flex;
     justify-content: space-between;
     
@@ -42,18 +44,22 @@ body{
 }
 #dep ,#choosee ,#choose2,#two ,#more{
     position: relative;
+  
     cursor:pointer;
 }
 #choose,#dropchoose,#dropchoose2,#droptwo ,#moredrop{
     display: none ;
     position: absolute;
     color: #1b2734;
+  
     background-color: #fff;
 }
 
 
 #dep:hover #choose{
     display:block;
+    
+   
 }
 #choosee:hover #dropchoose{
     display:block;
@@ -129,7 +135,7 @@ body{
 #fifty{
     display: grid;
     grid-template-columns: 50% 25% 25%;
-    background: url(/logo.png) no-repeat;
+    background: url(/logo\ \(1\).png) no-repeat;
     background-color: #9ae8dd;
    background-position-x: left;
    background-position-y: bottom;
@@ -155,6 +161,7 @@ body{
     margin-top: 20px;
     
 }
+
 .visits, .patientl,#patients,#flag{
     text-align: center;
     padding-top: 10%;
@@ -191,7 +198,107 @@ body{
 #picture div a img{
     width:30px;
 }
+#pictures div div {
+    padding: 10px 10px 10px 10px;
+    
+}
+#pictures div div img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
 #kt{
-    display: flex;
-    align-items: space-between;
+    display: inline;
+}
+#for div{
+    margin-top: 20px;
+    width: 279.625px;
+    height: 345px;
+    border-radius: 10px;
+    text-align: center;
+}
+#patien div{
+    padding: 10px;
+}
+#choosee p{
+   
+    padding-top: 50px;
+    text-decoration: underline;
+    
+}
+button{
+    margin-left:    70px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+}
+.kt button:hover{
+    background-color: #3d83df;
+}
+#pictures a{
+    color: #747474;
+    text-decoration: none;
+}
+.big{
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: .75em;
+    margin-top: 70px;
+
+}
+.cent{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.big {
+    grid-column: 2/5;
+}
+#footer{
+    color: grey;
+    font-size: 12px;
+    
+}
+#footer a{
+    text-decoration: none;
+    color:#3d83df;
+}
+.pi{
+    margin-left: 400px;
+}
+#pi{
+    margin-left: 400px;
+}
+#po{
+    margin-left:150px;
+}
+#bo{
+    margin-left:100px;
+}
+
+.grise{
+    color: #747474;
+}
+#chooseee{
+    background-color:  #00b39b;
+    width: 200px;
+    border: none;
+    height: 20px;
+   
 }
