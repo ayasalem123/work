@@ -33,14 +33,23 @@ body{
 
 }
 
-.gris ,#dep, #logos  a{
+.gris ,#dep, #logos div  a ,#hey,#dep  li{
     color:#747474;
     text-decoration: none;
     
 }
-.gris ,#logos a,#dep :hover{
+#dep  li:hover{
     color: #00b39b;
    
+}
+#hey:hover{
+    color: #00b39b;
+}
+.gris:hover{
+    color: #00b39b;
+}
+#logos div a:hover{
+    color: #00b39b;
 }
 #dep ,#choosee ,#choose2,#two ,#more{
     position: relative;
@@ -103,10 +112,16 @@ body{
     font-size: 23px;
     color:#fff;
 }
+#ror{
+    background-color: #3d83df;
+}
 #doctor{
     background-color: #3d83df;
 }
 #clinic{
+    background-color: #1b2734;
+}
+.rawr{
     background-color: #1b2734;
 }
 #logos{
@@ -246,8 +261,9 @@ button{
     text-transform: uppercase;
     transition: all .2s ease 0s;
 }
-.kt button:hover{
-    background-color: #3d83df;
+ button:hover{
+    background-color: #020b18;
+    cursor:pointer;
 }
 #pictures a{
     color: #747474;
@@ -263,13 +279,7 @@ button{
     margin-top: 70px;
 
 }
-.cent{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-.big {
-    grid-column: 2/5;
-}
+
 #footer{
     color: grey;
     font-size: 12px;
@@ -301,4 +311,7 @@ button{
     border: none;
     height: 20px;
    
+}
+.cent{
+    text-align: center;
 }
